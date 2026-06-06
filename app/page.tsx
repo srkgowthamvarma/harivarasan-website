@@ -1,3 +1,5 @@
+import CTA from "../components/CTA";
+import Stats from "../components/Stats";
 import Footer from "../components/Footer";
 import Strengths from "../components/Strengths";
 import Process from "../components/Process";
@@ -26,16 +28,19 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 text-lg text-gray-200">
-              Delivering complete turnkey solutions for Laboratories,
-              Clean Rooms, HVAC, Electrical, ELV and Industrial Utility Systems.
+              Engineering Excellence
+<br />
+for Laboratories,
+<br />
+Clean Rooms & Infrastructure
             </p>
 
             <div className="mt-8 flex gap-4">
-              <button className="bg-green-500 px-6 py-3 rounded-lg font-semibold">
+              <button className="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition">
                 Our Services
               </button>
 
-              <button className="border border-white px-6 py-3 rounded-lg">
+              <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#003B8F] transition">
                 Contact Us
               </button>
             </div>
@@ -51,6 +56,7 @@ export default function Home() {
 
         </div>
       </section>
+      <Stats />
       {/* Who We Are */}
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -113,6 +119,7 @@ export default function Home() {
 <Industries />
 <Process />
 <Strengths />
+<CTA />
 <Footer />
     </main>
   );
